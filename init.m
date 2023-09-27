@@ -18,15 +18,17 @@ eta0 = [0,0,0,0,0,0]';
 % Initial velocity u, v, w, p, q, r
 nu0 = [0,0,0,0,0,0]';
 
+%% get omega and zeta from A matrix
+A = vesselABC.Ar;
 %% reference model parameters
-t1 = 2;
-t2 = 8; 
-t3 = 10;
+t1 = 10;
+t2 = 10; 
+t3 = 20;
 Af = diag ([1/t1, 1/t2, 1/t3]);
 
 %
-omega = [2 3 4];
-zeta = [0.1 0.2 0.3];
+omega = [2*pi/100 2*pi/100 2*pi/50];
+zeta = [0.9 0.7 1];
 Gamma_Matrix = diag(omega.^2);
 Omega_Matrix = diag (2*zeta.*omega);
 %% Controller paramters
