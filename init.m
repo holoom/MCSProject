@@ -40,3 +40,8 @@ Ki = [1 1 1];
 %% PID tunning usign LQG
 
 
+%% Simulation Scenarios
+sample_time = 0.01;
+simulation = 4; 
+ref_model = 0;
+
