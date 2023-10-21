@@ -1,3 +1,6 @@
 MSS/
 __MACOSX/
 slprj/
+figs/
+# Simulink cache files
+*.slxc
